@@ -1,12 +1,9 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
-
 const app = express();
 const port = 9876;
-
 app.use(cors());
-
 app.get('/numbers/:id', async (req, res) => {
   const { id } = req.params;
   let url;
